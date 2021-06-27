@@ -1,0 +1,11 @@
+{% load static %}
+
+<img src="{% static 'images/logo1.png' %}" alt="" class="nav-img rotate" class="icon">
+<div class="nav" id="myTopnav">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'blog' %}">Blog</a>
+        <a href="">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-ellipsis-v" style="color: white;"></i>
+        </a>
+</div>

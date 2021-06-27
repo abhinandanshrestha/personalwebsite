@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="main">
+  {% include 'navbar.html' %}
+  <p class="intro">
+      <span class="bold">I</span>'m.. 
+      <span class="bold"> A</span>bhinandan <span class="bold">S</span>hrestha
+  </p>
+  <center>
+      <form method="get" action="Portfolio.pdf">
+      <button type="submit">Get Portfolio!</button>
+      </form>
+  </center>
+</div>
+
+<!-- <center>
+  <h1 style="margin-top: 20px; margin-bottom: -20px; border-bottom: 3px black solid; max-width: fit-content;">ABOUT</h1>
+</center> -->
+<div class="box">
+  <div class="left"></div>
+  <div class="right">
+      <h2 style="padding-top: 50px;">HOLA!<br></h2>
+      <h1>I'm Abhinandan Shrestha</h1>
+      <p>Engineer/Developer</p><br>
+      <p class="pleft"><i class="fa fa-envelope-open-text"></i> shtabhi@gmail.com</p>
+      <p class="pleft"><i class="fa fa-phone"></i> 9868205040</p>
+      <p class="pleft"><i class="fa fa-house-damage"></i> Koteshwor, Kathmandu</p>
+      <br>
+      <p>
+          <center>
+              <i class="fab fa-facebook" style="color: rgb(100, 100, 255);"></i>
+              <i class="fab fa-twitter" style="color: rgb(65, 179, 255);"></i>
+              <i class="fab fa-github" style="color: rgb(51, 51, 51);"></i>
+              <i class="fab fa-instagram" style="color: rgb(212, 69, 212);"></i>
+              <i class="fab fa-youtube" style="color: crimson;"></i>
+          </center>
+      </p>
+      <center><button>Contact</button></center>
+  </div>
+</div>
+
+{%endblock%}

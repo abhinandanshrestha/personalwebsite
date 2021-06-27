@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    {% include 'navbar.html' %}<br>
+    <hr class="hr-class">
+
+        {% for post in post_list %}
+        <div class="container blog-container">
+        <h1 style="color: var(--blog-title)">{{ post.title }}</h2>
+        <p style="color: var(--blog-date);">{{ post.created_on}} </p>
+        <hr class="hr-classA">
+        <p>{{post.content|slice:":200"}}</p>
+        <button onclick="window.location.href='{% url 'post_detail' post.slug  %}'" style="padding: 10px;">Read More &rarr;</button>
+        </div>
+        {% endfor %}
+
+
+
+{%endblock%}

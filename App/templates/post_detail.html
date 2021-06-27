@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static%}
+{% block content %}
+        {% include 'navbar.html' %}<br>
+        <hr class="hr-class">
+
+        <!-- <div class="container"> -->
+        <div class="wrapper">
+                <div class="flex-left">
+                        <h1 style="color: var(--blog-title)">{% block title %} {{ object.title }} {% endblock title %}</h1>
+                        <p style="color: var(--blog-date)">{{ post.created_on }}</p>
+                        <br>
+                        <img src={{ post.image.url }} class="post-img"><br><br>
+                        <p>{{ object.content | safe }}</p><br>
+                        <button onclick="window.location.href='{% url 'blog' %}'" style="padding: 10px;">Return</button>
+                </div>
+                <div class="flex-right">
+                        <br>
+                        <center style="color: var(--blog-date);">SIDEBAR</center>
+                        <hr class="hr-class"><br>
+                        <center>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna neque viverra justo nec ultrices dui sapien eget mi. Erat velit scelerisque in dictum non consectetur a. </center>
+                </div>
+        </div>
+
+
+        <!-- </div> -->
+
+
+{% endblock content %}
