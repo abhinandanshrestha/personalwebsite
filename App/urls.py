@@ -8,8 +8,4 @@ urlpatterns = [
   path('',views.index, name="index"),
   path('blogs/', views.PostList.as_view(), name="blog"),
   path('<slug:slug>/', views.DetailView.as_view(), name="post_detail"),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-if settings.DEBUG:
-        urlpatterns += static(settings.MEDIA_URL,
-                              document_root=settings.MEDIA_ROOT)
+]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
