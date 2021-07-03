@@ -10,7 +10,7 @@
                         <h1 style="color: var(--blog-title)">{% block title %} {{ object.title }} {% endblock title %}</h1>
                         <p style="color: var(--blog-date)">{{ post.created_on }}</p>
                         <br>
-                        <img src={{ post.image.url }} class="post-img" alt="..."><br><br>
+                        <img src={{post.image}} class="post-img" alt="..."><br><br>
                         <p>{{ object.content | safe }}</p><br>
                         <button onclick="window.location.href='{% url 'blog' %}'" style="padding: 10px;">Return</button>
                 </div>
