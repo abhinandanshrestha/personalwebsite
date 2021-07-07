@@ -64,12 +64,12 @@ body{
 }
 
 .post-img{
-    height: 30vw;
-    width: auto;
+    width: 90vw;
+    height: auto;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 5px; 
     height: 10px;
   }
   
@@ -89,7 +89,7 @@ body{
   }
 
 .main{
-    background-image: url("../images/main.gif");
+    background-image: url("../images/main.0698a040eae0.gif");
     width: 100vw;
     height: 100vh;
     background-position: center; /* Center the image */
@@ -238,9 +238,14 @@ button:hover{
     }
     .wrapper{
         flex-direction: column;
+        width: 90%;
     }
     .wrapper .flex-right{
         margin-top: 40px;
+        margin-left: 0;
+    }
+    .container{
+        width: 80%;
     }
 }
 
@@ -259,7 +264,7 @@ button:hover{
     flex: 2.5;
     width: 100%;
     height: auto;
-    background-image: url("../images/mypic.jpg");
+    background-image: url("../images/mypic.6db9626facd5.jpg");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; 

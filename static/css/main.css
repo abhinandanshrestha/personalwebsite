@@ -64,12 +64,12 @@ body{
 }
 
 .post-img{
-    height: 30vw;
-    width: auto;
+    width: 90vw;
+    height: auto;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 5px; 
     height: 10px;
   }
   
@@ -238,9 +238,14 @@ button:hover{
     }
     .wrapper{
         flex-direction: column;
+        width: 90%;
     }
     .wrapper .flex-right{
         margin-top: 40px;
+        margin-left: 0;
+    }
+    .container{
+        width: 80%;
     }
 }
 
